@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-label>Profil</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="account">
+    <div class="detail-account">
+      <div class="circle">
+        <h6>M</h6>
+      </div>
+      <div class="detail-list-account">
+        <h4>Nama Akun</h4>
+        <h6>Nomor Telepon</h6>
+        <h6>Akun Email</h6>
+      </div>
+    </div>
+    <img src="../../assets/pencil-svgrepo-com.svg" alt="" />
+  </div>
+  <div class="setting-list">
+    <h5>Pengaturan</h5>
+    <ion-item routerLink="/history">
+      <ion-avatar slot="start">
+        <img src="../../assets/list-svgrepo-com.svg" />
+      </ion-avatar>
+      <ion-label><h5>Riwayat Pesanan</h5> </ion-label>
+    </ion-item>
+    <ion-item routerLink="/history">
+      <ion-avatar slot="start">
+        <img src="../../assets/question-svgrepo-com.svg" />
+      </ion-avatar>
+      <ion-label><h5>Bantuan & Laporan Saya</h5></ion-label>
+    </ion-item>
+    <ion-item id="open-modal" (click)="presentAlert()">
+      <ion-avatar slot="start">
+        <img src="../../assets/language-svgrepo-com.svg" />
+      </ion-avatar>
+      <ion-label><h5>Pilihan Bahasa</h5></ion-label>
+    </ion-item>
+    <ion-item routerLink="/partner">
+      <ion-avatar slot="start">
+        <img src="../../assets/deal-svgrepo-com.svg" />
+      </ion-avatar>
+      <ion-label><h5>Kemitraan</h5></ion-label>
+    </ion-item>
+    <ion-item routerLink="/login">
+      <ion-avatar slot="start">
+        <img src="../../assets/log-out-svgrepo-com.svg" />
+      </ion-avatar>
+      <ion-label><h5>Logout</h5></ion-label>
+    </ion-item>
+  </div>
+</ion-content>

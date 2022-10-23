@@ -1,0 +1,94 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+ion-toolbar {
+  --background: rgb(34, 54, 155);
+  color: white;
+
+  ion-buttons {
+    --background: white;
+    --color: white;
+  }
+  ion-label {
+    text-align: center;
+  }
+
+  border-radius: 0 0 15px 15px;
+}
+ion-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  h5 {
+    margin-left: 20px;
+  }
+  .input-usaha {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .jadwal-hari {
+    margin-right: 20px;
+  }
+  .jam {
+    margin-top: 5px;
+    h5 {
+      font-size: 9pt;
+    }
+    ion-button {
+      height: 30px;
+    }
+  }
+  .daftar-jasa {
+    margin-top: 5px;
+    h5 {
+      font-size: 9pt;
+    }
+    ion-button {
+      height: 30px;
+    }
+  }
+  .account {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid rgb(34, 54, 155);
+    border-radius: 5px;
+    .detail-account {
+      margin-left: 5px;
+      h5,
+      h6 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+      }
+
+      h5 {
+        font-weight: bold;
+      }
+    }
+    img {
+      margin-top: 5px;
+      margin-right: 10px;
+      height: 20px;
+    }
+  }
+  ion-button {
+    --background: rgb(34, 54, 155);
+    --color: white;
+  }
+}
+.form {
+  margin-left: 20px;
+  margin-right: 20px;
+  ion-icon {
+    margin-right: 10px;
+  }
+  h6 {
+    margin-top: 10px;
+    font-weight: 4pt;
+
+    text-align: center;
+  }
+}

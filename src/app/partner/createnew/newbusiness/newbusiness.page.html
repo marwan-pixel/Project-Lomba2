@@ -1,0 +1,200 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        mode="md"
+        defaultHref="/partner/createnew"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-label>Profil Usaha</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h5>Lengkapi data usaha Anda, ya</h5>
+  <div class="input-usaha">
+    <ion-item>
+      <ion-label position="stacked">Nama Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Kategori Usaha">
+          <ion-select-option value="Pertukangan">Pertukangan</ion-select-option>
+          <ion-select-option value="Rumah Tangga"
+            >Rumah Tangga</ion-select-option
+          >
+          <ion-select-option value="Kebersihan">Kebersihan</ion-select-option>
+          <ion-select-option value="Konsumsi">Konsumsi</ion-select-option>
+        </ion-select>
+      </ion-item>
+        </ion-list
+    >
+
+    <ion-item>
+      <ion-label position="stacked">Deskripsi Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Foto Tempat Usaha</ion-label>
+      <ion-input type="file"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Alamat Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <div class="jam">
+      <ion-label position="stacked"><h5>Jam Operasional</h5></ion-label>
+      <ion-button id="open-modal" fill="clear" shape="round">
+        Klik Di sini
+      </ion-button>
+    </div>
+    <div class="daftar-jasa">
+      <ion-label position="stacked"><h5>Daftar Jasa</h5></ion-label>
+      <ion-button id="open-list-service" fill="clear" shape="round">
+        Klik Di sini
+      </ion-button>
+    </div>
+
+    <div class="account">
+      <div class="detail-account">
+        <h5>Daftar Jasa</h5>
+        <h6>Nama Jasa : Jasa Cuci</h6>
+        <h6>Harga Jasa : Rp 25.000</h6>
+      </div>
+      <img src="../../assets/pencil-svgrepo-com.svg" alt="" />
+    </div>
+  </div>
+  <ion-button expand="block" fill="default" shape="round"> Kirim </ion-button>
+</ion-content>
+
+<ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button (click)="cancel()">Cancel</ion-button>
+        </ion-buttons>
+        <ion-title>Jam Operasional</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Senin</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Selasa</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Rabu</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Kamis</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Jumat</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Sabtu</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+      <div class="jadwal-hari">
+        <ion-item>
+          <ion-label>Minggu</ion-label>
+          <ion-checkbox slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Jam</ion-label>
+          <ion-input type="number" placeholder="Jam Mulai"></ion-input>
+          <ion-input type="number" placeholder="Jam Selesai"></ion-input>
+        </ion-item>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="open-list-service" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button (click)="cancelAdd()">Cancel</ion-button>
+        </ion-buttons>
+        <ion-title>Daftar Jasa</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="confirmAdd()" [strong]="true"
+            >Confirm</ion-button
+          >
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="form">
+        <ion-item>
+          <ion-label>Nama Jasa</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Harga Jasa</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Keterangan</ion-label>
+          <ion-input type="type"></ion-input>
+        </ion-item>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>

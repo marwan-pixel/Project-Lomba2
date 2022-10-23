@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="/partner"></ion-back-button>
+    </ion-buttons>
+    <ion-label>Buat Usaha Baru</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="procedure">
+    <h5>
+      Buat kamu yang pengen tau cara buka usaha baru, yuk lihat tata caranya di
+      bawah ini :
+    </h5>
+    <h6>1. Siapkan dokumen seperti nama, email, foto KTP, dan nomor KTP</h6>
+    <h6>
+      2. Lengkapi data usaha dan pilih kategori jasa yang ingin dijalankan
+    </h6>
+  </div>
+  <div class="input-data">
+    <ion-item>
+      <ion-label position="stacked">Nama pemilik</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <div class="info">
+      <ion-label
+        ><h6>
+          Nama harus ditulis persis seperti tertera di KTP, termasuk jika ada
+          jabatan, titik, dll.
+        </h6></ion-label
+      >
+    </div>
+    <ion-item>
+      <ion-label position="stacked">Email pemilik</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nomor HP pemilik</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Foto KTP</ion-label>
+      <ion-input type="file"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nomor KTP</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tempat Lahir</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tanggal Lahir</ion-label>
+      <ion-input type="date"></ion-input>
+    </ion-item>
+      <ion-item>
+      <ion-label position="stacked">Alamat</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <div class="info">
+      <ion-label
+        ><h6>
+          Alamat ditulis persis seperti tertera di KTP.
+        </h6></ion-label
+      >
+    </div>
+    <ion-button
+      routerLink="/partner/createnew/newbusiness"
+      mode="ios"
+      expand="block"
+      fill="default"
+      shape="round"
+    >
+      Lanjut
+    </ion-button>
+  </div>
+</ion-content>

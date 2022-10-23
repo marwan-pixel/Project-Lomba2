@@ -1,0 +1,83 @@
+ion-toolbar {
+  --background: rgb(34, 54, 155);
+  color: white;
+
+  ion-buttons {
+    --background: white;
+  }
+  ion-label {
+    text-align: center;
+  }
+
+  border-radius: 0 0 15px 15px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ion-content {
+  .top {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 20px;
+    }
+  }
+  .info {
+    h4 {
+      font-weight: bold;
+    }
+    h4,
+    h6 {
+      margin-top: 3px;
+    }
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .deskripsi {
+    margin-left: 20px;
+    margin-right: 20px;
+    h5 {
+      font-weight: bold;
+      font-size: 12pt;
+    }
+    h6 {
+      margin-top: 5px;
+      font-size: 11pt;
+      text-align: justify;
+    }
+
+    .jam-kerja {
+      h6 {
+        font-size: 10pt;
+      }
+      h5 {
+        font-size: 11pt;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+ion-footer {
+  .footer {
+    padding: 20px;
+    border-radius: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 54, 155);
+    ion-button {
+      width: 200px;
+      --border-color: white;
+      --border-width: 2px;
+      color: white;
+    }
+  }
+}

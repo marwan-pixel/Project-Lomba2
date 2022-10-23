@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="header">
+    <h3>Register</h3>
+  </div>
+  <div class="main">
+    <div class="form">
+      <ion-item>
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-label>Nama</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail-open-outline"></ion-icon>
+        <ion-label>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-label>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-button routerLink="/login" expand="block" shape="round">
+        Register
+      </ion-button>
+
+       <h6>Belum memiliki akun? Tekan tombol registrasi di bawah</h6>
+      <ion-button
+        expand="block"
+        routerLink="/login"
+        class="register"
+        fill="outline"
+        shape="round"
+      >
+        Kembali ke Login
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

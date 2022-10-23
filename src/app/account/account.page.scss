@@ -1,0 +1,76 @@
+ion-toolbar {
+  --background: rgb(34, 54, 155);
+  color: white;
+
+  ion-buttons {
+    --background: white;
+  }
+
+  border-radius: 0 0 15px 15px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+ion-content {
+  
+  .account {
+    margin: 30px 20px 30px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .circle {
+      background-color: rgb(34, 54, 155);
+      width: 45px;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 45px;
+      color: white;
+    }
+
+    .detail-account {
+      display: flex;
+
+      .detail-list-account {
+        margin: 0 0 0 20px;
+      }
+
+      h4,
+      h6 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        font-weight: bold;
+      }
+
+      ion-badge {
+        margin-top: 5px;
+      }
+    }
+
+    img {
+      border-radius: 0;
+      height: 15px;
+    }
+  }
+
+  .setting-list {
+    h5 {
+      margin-left: 20px;
+    }
+
+    ion-avatar {
+      margin-right: 10px;
+    }
+  }
+  .customAlert {
+    header {
+      background-color: rgb(34, 54, 155);
+    }
+  }
+}

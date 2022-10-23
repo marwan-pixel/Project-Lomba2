@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pertukangan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar
+    show-clear-button="focus"
+    placeholder="Cari jasa yang kamu butuhin"
+  ></ion-searchbar>
+  <div class="filter">
+    <h6>Filter Kategori</h6>
+    <ion-chip color="primary" class="active" mode="ios" outline="true">
+      Pertukangan
+    </ion-chip>
+    <ion-chip color="primary" mode="ios" outline="true"> Perpipaan </ion-chip>
+    <ion-chip color="primary" mode="ios" outline="true"> Kelistrikan </ion-chip>
+  </div>
+  <div class="content">
+    <ion-card mode="ios">
+      <img src="../../assets/pipe.jpg" routerLink="/detail-service" alt="" />
+      <ion-label>
+        <h6>* 4.1</h6>
+        <h5>Nama Usaha</h5>
+        <h6>Jasa yang ditawarkan</h6>
+      </ion-label>
+    </ion-card>
+    <ion-card mode="ios">
+      <img src="../../assets/painter.jpg" alt="" />
+      <ion-label>
+        <h6>* 4.1</h6>
+        <h5>Nama Usaha</h5>
+        <h6>Jasa yang ditawarkan</h6>
+      </ion-label>
+    </ion-card>
+    <ion-card mode="ios">
+      <img src="../../assets/builder.jpg" alt="" />
+      <ion-label>
+        <h6>* 4.1</h6>
+        <h5>Nama Usaha</h5>
+        <h6>Jasa yang ditawarkan</h6>
+      </ion-label>
+    </ion-card>
+    <ion-card mode="ios">
+      <img src="../../assets/dump.jpg" alt="" />
+      <ion-label>
+        <h6>* 4.1</h6>
+        <h5>Nama Usaha</h5>
+        <h6>Jasa yang ditawarkan</h6>
+      </ion-label>
+    </ion-card>
+  </div>
+</ion-content>

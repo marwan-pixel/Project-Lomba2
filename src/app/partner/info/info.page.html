@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="/partner"></ion-back-button>
+    </ion-buttons>
+    <ion-label>Info Usaha Anda</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="input-usaha">
+    <ion-item>
+      <ion-label position="stacked">Nama Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Kategori Usaha">
+          <ion-select-option value="Pertukangan">Pertukangan</ion-select-option>
+          <ion-select-option value="Rumah Tangga"
+            >Rumah Tangga</ion-select-option
+          >
+          <ion-select-option value="Kebersihan">Kebersihan</ion-select-option>
+          <ion-select-option value="Konsumsi">Konsumsi</ion-select-option>
+        </ion-select>
+      </ion-item>
+        </ion-list
+    >
+
+    <ion-item>
+      <ion-label position="stacked">Deskripsi Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Foto Tempat Usaha</ion-label>
+      <ion-input type="file"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Alamat Usaha</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <div class="jam">
+      <ion-label position="stacked"><h5>Jam Operasional</h5></ion-label>
+      <div class="jam-kerja">
+        <h5>Jadwal</h5>
+        <h6>Senin, 09.00 - 15.00</h6>
+        <h6>Selasa, 09.00 - 15.00</h6>
+        <h6>Rabu, 09.00 - 15.00</h6>
+        <h6>Kamis, 09.00 - 15.00</h6>
+        <h6>Jumat, 09.00 - 15.00</h6>
+      </div>
+    </div>
+    <div class="daftar-jasa">
+      <ion-label position="stacked"><h5>Daftar Jasa</h5></ion-label>
+    </div>
+
+    <div class="account">
+      <div class="detail-account">
+        <h5>Daftar Jasa</h5>
+        <h6>Nama Jasa : Jasa Cuci</h6>
+        <h6>Harga Jasa : Rp 25.000</h6>
+      </div>
+      <img src="../../assets/pencil-svgrepo-com.svg" alt="" />
+    </div>
+    <ion-button expand="block" shape="round" routerLink="/tabs/tab1">
+      Ubah Info Usaha
+    </ion-button>
+  </div>
+</ion-content>
